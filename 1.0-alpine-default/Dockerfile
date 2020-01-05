@@ -7,9 +7,7 @@ RUN apk -U add \
         musl-dev \
         openssl-dev \
         python-dev \
-        py-imaging \
         py-pip \
         curl ca-certificates \
     && update-ca-certificates \
-    && rm -rf /var/cache/apk/* \
-    && pip install --no-cache-dir virtualenv
+    && rm -rf /var/cache/apk/*
